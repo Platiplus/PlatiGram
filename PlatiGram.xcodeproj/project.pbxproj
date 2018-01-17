@@ -16,7 +16,9 @@
 		093E0047200E921D00B316D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093E0020200E921D00B316D8 /* Main.storyboard */; };
 		093E0048200E921D00B316D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093E0021200E921D00B316D8 /* Assets.xcassets */; };
 		093E0049200E921D00B316D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093E0022200E921D00B316D8 /* LaunchScreen.storyboard */; };
+		097CF330200FD0790046B6D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097CF32F200FD0790046B6D0 /* LoginViewController.swift */; };
 		09E5A8B8200F81E4009C2C42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09E5A8B7200F81E4009C2C42 /* GoogleService-Info.plist */; };
+		09E5A8BA200F9064009C2C42 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5A8B9200F9064009C2C42 /* SignUpViewController.swift */; };
 		8A0DD550127616D4FE7CB6A4 /* Pods_PlatiGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB4246D80EE676DCF433CEE /* Pods_PlatiGram.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +34,9 @@
 		093EFFDE200E91AC00B316D8 /* PlatiGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatiGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		093EFFED200E91AE00B316D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		093EFFF3200E921D00B316D8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		097CF32F200FD0790046B6D0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		09E5A8B7200F81E4009C2C42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		09E5A8B9200F9064009C2C42 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0FB4246D80EE676DCF433CEE /* Pods_PlatiGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatiGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66B70AAF116EF8086FE636BD /* Pods-PlatiGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatiGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlatiGram/Pods-PlatiGram.debug.xcconfig"; sourceTree = "<group>"; };
 		8385396AF8B9348B8C57519B /* Pods-PlatiGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlatiGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlatiGram/Pods-PlatiGram.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				093E0010200E921D00B316D8 /* NewsfeedTableViewController.swift */,
+				09E5A8B9200F9064009C2C42 /* SignUpViewController.swift */,
+				097CF32F200FD0790046B6D0 /* LoginViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -266,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				093E0023200E921D00B316D8 /* AppDelegate.swift in Sources */,
+				09E5A8BA200F9064009C2C42 /* SignUpViewController.swift in Sources */,
 				093E002E200E921D00B316D8 /* User.swift in Sources */,
 				093E002F200E921D00B316D8 /* Post.swift in Sources */,
+				097CF330200FD0790046B6D0 /* LoginViewController.swift in Sources */,
 				093E003A200E921D00B316D8 /* NewsfeedTableViewController.swift in Sources */,
 				093E0045200E921D00B316D8 /* PostHeaderCell.swift in Sources */,
 				093E0046200E921D00B316D8 /* PostCell.swift in Sources */,
