@@ -31,10 +31,10 @@ class PostHeaderCell: UITableViewCell {
         usernameLabel.text = post.createdBy.username
         
         //Propriedades do botão de Follow
-        followButton.layer.borderWidth = 1.0
-        followButton.layer.cornerRadius = 2.0
-        followButton.layer.borderColor = followButton.tintColor.cgColor
-        followButton.layer.masksToBounds = true
+        //followButton.layer.borderWidth = 1.0
+        //followButton.layer.cornerRadius = 2.0
+        //followButton.layer.borderColor = followButton.tintColor.cgColor
+        //followButton.layer.masksToBounds = true
     }
     
     }

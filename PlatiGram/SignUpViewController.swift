@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var signupBtn: UIButton!
     @IBOutlet weak var userImageView: UIImageView!
     
+    
     //Declara o ImagePicker para selecionar a foto de Perfil
     let picker = UIImagePickerController()
     //Declara as Referências ao armazenamento do usuário e do banco de dados
@@ -25,6 +26,10 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     var dbRef: DatabaseReference!
     
     override func viewDidLoad() {
+        
+        //Propriedade estéticas da imagem do usuário
+        userImageView.layer.cornerRadius = userImageView.bounds.width / 2.0
+        userImageView.layer.masksToBounds = true
         
         super.viewDidLoad()
         
@@ -54,7 +59,6 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             self.userImageView.image = image
-            signupBtn.isHidden = false
         }
         //Fecha o picker quando a imagem é selecionada
         self.dismiss(animated: true, completion: nil)

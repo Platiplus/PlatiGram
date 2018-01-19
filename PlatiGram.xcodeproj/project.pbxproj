@@ -16,7 +16,11 @@
 		093E0047200E921D00B316D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093E0020200E921D00B316D8 /* Main.storyboard */; };
 		093E0048200E921D00B316D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093E0021200E921D00B316D8 /* Assets.xcassets */; };
 		093E0049200E921D00B316D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093E0022200E921D00B316D8 /* LaunchScreen.storyboard */; };
+		096AFA0F20110C57000ECA97 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AFA0E20110C57000ECA97 /* UserTableViewCell.swift */; };
+		096AFA1320110E4D000ECA97 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AFA1220110E4D000ECA97 /* UsersTableViewController.swift */; };
+		096AFA1520112C4E000ECA97 /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AFA1420112C4E000ECA97 /* FollowButton.swift */; };
 		097CF330200FD0790046B6D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097CF32F200FD0790046B6D0 /* LoginViewController.swift */; };
+		097CF332200FF5A00046B6D0 /* LoginTextfields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097CF331200FF5A00046B6D0 /* LoginTextfields.swift */; };
 		09E5A8B8200F81E4009C2C42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09E5A8B7200F81E4009C2C42 /* GoogleService-Info.plist */; };
 		09E5A8BA200F9064009C2C42 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5A8B9200F9064009C2C42 /* SignUpViewController.swift */; };
 		8A0DD550127616D4FE7CB6A4 /* Pods_PlatiGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB4246D80EE676DCF433CEE /* Pods_PlatiGram.framework */; };
@@ -34,7 +38,11 @@
 		093EFFDE200E91AC00B316D8 /* PlatiGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatiGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		093EFFED200E91AE00B316D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		093EFFF3200E921D00B316D8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		096AFA0E20110C57000ECA97 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		096AFA1220110E4D000ECA97 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		096AFA1420112C4E000ECA97 /* FollowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
 		097CF32F200FD0790046B6D0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		097CF331200FF5A00046B6D0 /* LoginTextfields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextfields.swift; sourceTree = "<group>"; };
 		09E5A8B7200F81E4009C2C42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09E5A8B9200F9064009C2C42 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0FB4246D80EE676DCF433CEE /* Pods_PlatiGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatiGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +77,7 @@
 				093E0010200E921D00B316D8 /* NewsfeedTableViewController.swift */,
 				09E5A8B9200F9064009C2C42 /* SignUpViewController.swift */,
 				097CF32F200FD0790046B6D0 /* LoginViewController.swift */,
+				096AFA1220110E4D000ECA97 /* UsersTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -78,6 +87,9 @@
 			children = (
 				093E001E200E921D00B316D8 /* PostHeaderCell.swift */,
 				093E001F200E921D00B316D8 /* PostCell.swift */,
+				097CF331200FF5A00046B6D0 /* LoginTextfields.swift */,
+				096AFA0E20110C57000ECA97 /* UserTableViewCell.swift */,
+				096AFA1420112C4E000ECA97 /* FollowButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -275,10 +287,14 @@
 				09E5A8BA200F9064009C2C42 /* SignUpViewController.swift in Sources */,
 				093E002E200E921D00B316D8 /* User.swift in Sources */,
 				093E002F200E921D00B316D8 /* Post.swift in Sources */,
+				096AFA0F20110C57000ECA97 /* UserTableViewCell.swift in Sources */,
+				096AFA1320110E4D000ECA97 /* UsersTableViewController.swift in Sources */,
 				097CF330200FD0790046B6D0 /* LoginViewController.swift in Sources */,
 				093E003A200E921D00B316D8 /* NewsfeedTableViewController.swift in Sources */,
+				096AFA1520112C4E000ECA97 /* FollowButton.swift in Sources */,
 				093E0045200E921D00B316D8 /* PostHeaderCell.swift in Sources */,
 				093E0046200E921D00B316D8 /* PostCell.swift in Sources */,
+				097CF332200FF5A00046B6D0 /* LoginTextfields.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

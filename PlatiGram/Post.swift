@@ -6,6 +6,8 @@
 //  Copyright © 2018 Platiplus. All rights reserved.
 //
 
+//Posts e usuários foram feitos primeiro de maneira local, então se estiver alguma coisa estranha, é pq eu ainda estou migrando pro banco de dados
+
 import UIKit
 
 struct Post
@@ -22,7 +24,7 @@ struct Post
     {
         var posts = [Post]()
         
-        let plat = User(username: "Platiplus", profileImage: UIImage(named: "plat"))
+        let plat = User(username: "Platiplus", profileImage: UIImage(named: "plat"), userID: "111", imagePath:"11")
         
         let post1 = Post(createdBy: plat, timeAgo: "2 hr", caption: "Estrada de Platina", image: UIImage(named: "1"), numberOfLikes: 12, numberOfComments: 5, numberOfShares: 2)
         
@@ -32,7 +34,7 @@ struct Post
         
         let post7 = Post(createdBy: plat, timeAgo: "2d ago", caption: "Ornitorrinco", image: UIImage(named: "7"), numberOfLikes: 2, numberOfComments: 8, numberOfShares: 9)
         
-        let uilha = User(username: "Uilha", profileImage: UIImage(named: "uilha"))
+        let uilha = User(username: "Uilha", profileImage: UIImage(named: "uilha"), userID: "222", imagePath:"22")
         
         let post4 = Post(createdBy: uilha, timeAgo: "2 hrs", caption: "Ciclovia de Santos", image: UIImage(named: "4"), numberOfLikes: 94, numberOfComments: 8, numberOfShares: 918)
         
