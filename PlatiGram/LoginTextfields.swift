@@ -7,7 +7,6 @@
 //
 
 import UIKit
-@IBDesignable
 class LoginTextfields: UITextField {
 
     override func layoutSubviews() {

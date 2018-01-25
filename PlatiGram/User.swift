@@ -10,12 +10,11 @@
 
 import UIKit
 
-struct User
+class User: NSObject
+
 {
     var username: String?
-    var profileImage: UIImage?
     var userID: String?
-    //var username: String!
     var imagePath: String?
 }
 

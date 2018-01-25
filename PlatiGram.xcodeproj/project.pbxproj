@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091C111220178B8E00BB7967 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C111120178B8E00BB7967 /* TakePhotoViewController.swift */; };
 		093E0023200E921D00B316D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093EFFF3200E921D00B316D8 /* AppDelegate.swift */; };
 		093E002E200E921D00B316D8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093E0001200E921D00B316D8 /* User.swift */; };
 		093E002F200E921D00B316D8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093E0002200E921D00B316D8 /* Post.swift */; };
-		093E003A200E921D00B316D8 /* NewsfeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093E0010200E921D00B316D8 /* NewsfeedTableViewController.swift */; };
-		093E0045200E921D00B316D8 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093E001E200E921D00B316D8 /* PostHeaderCell.swift */; };
+		093E003A200E921D00B316D8 /* NewsfeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093E0010200E921D00B316D8 /* NewsfeedViewController.swift */; };
 		093E0046200E921D00B316D8 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093E001F200E921D00B316D8 /* PostCell.swift */; };
 		093E0047200E921D00B316D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093E0020200E921D00B316D8 /* Main.storyboard */; };
 		093E0048200E921D00B316D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093E0021200E921D00B316D8 /* Assets.xcassets */; };
 		093E0049200E921D00B316D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093E0022200E921D00B316D8 /* LaunchScreen.storyboard */; };
 		096AFA0F20110C57000ECA97 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AFA0E20110C57000ECA97 /* UserTableViewCell.swift */; };
 		096AFA1320110E4D000ECA97 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AFA1220110E4D000ECA97 /* UsersTableViewController.swift */; };
-		096AFA1520112C4E000ECA97 /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AFA1420112C4E000ECA97 /* FollowButton.swift */; };
 		097CF330200FD0790046B6D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097CF32F200FD0790046B6D0 /* LoginViewController.swift */; };
 		097CF332200FF5A00046B6D0 /* LoginTextfields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097CF331200FF5A00046B6D0 /* LoginTextfields.swift */; };
+		097EC8362017ABA900324296 /* PhotoPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EC8352017ABA900324296 /* PhotoPostViewController.swift */; };
 		09E5A8B8200F81E4009C2C42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09E5A8B7200F81E4009C2C42 /* GoogleService-Info.plist */; };
 		09E5A8BA200F9064009C2C42 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5A8B9200F9064009C2C42 /* SignUpViewController.swift */; };
 		8A0DD550127616D4FE7CB6A4 /* Pods_PlatiGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB4246D80EE676DCF433CEE /* Pods_PlatiGram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091C111120178B8E00BB7967 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
 		093E0001200E921D00B316D8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		093E0002200E921D00B316D8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		093E0010200E921D00B316D8 /* NewsfeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedTableViewController.swift; sourceTree = "<group>"; };
-		093E001E200E921D00B316D8 /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
+		093E0010200E921D00B316D8 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
 		093E001F200E921D00B316D8 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		093E0020200E921D00B316D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		093E0021200E921D00B316D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,9 +40,9 @@
 		093EFFF3200E921D00B316D8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		096AFA0E20110C57000ECA97 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		096AFA1220110E4D000ECA97 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
-		096AFA1420112C4E000ECA97 /* FollowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
 		097CF32F200FD0790046B6D0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		097CF331200FF5A00046B6D0 /* LoginTextfields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextfields.swift; sourceTree = "<group>"; };
+		097EC8352017ABA900324296 /* PhotoPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPostViewController.swift; sourceTree = "<group>"; };
 		09E5A8B7200F81E4009C2C42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09E5A8B9200F9064009C2C42 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0FB4246D80EE676DCF433CEE /* Pods_PlatiGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlatiGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,22 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		093E004A200E926700B316D8 /* Model */ = {
+		093E004A200E926700B316D8 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
 				093E0001200E921D00B316D8 /* User.swift */,
 				093E0002200E921D00B316D8 /* Post.swift */,
 			);
-			name = Model;
+			name = Objects;
 			sourceTree = "<group>";
 		};
 		093E004B200E928600B316D8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				093E0010200E921D00B316D8 /* NewsfeedTableViewController.swift */,
+				093E0010200E921D00B316D8 /* NewsfeedViewController.swift */,
 				09E5A8B9200F9064009C2C42 /* SignUpViewController.swift */,
 				097CF32F200FD0790046B6D0 /* LoginViewController.swift */,
 				096AFA1220110E4D000ECA97 /* UsersTableViewController.swift */,
+				091C111120178B8E00BB7967 /* TakePhotoViewController.swift */,
+				097EC8352017ABA900324296 /* PhotoPostViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -85,11 +87,9 @@
 		093E004C200E929200B316D8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				093E001E200E921D00B316D8 /* PostHeaderCell.swift */,
 				093E001F200E921D00B316D8 /* PostCell.swift */,
 				097CF331200FF5A00046B6D0 /* LoginTextfields.swift */,
 				096AFA0E20110C57000ECA97 /* UserTableViewCell.swift */,
-				096AFA1420112C4E000ECA97 /* FollowButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				093EFFF3200E921D00B316D8 /* AppDelegate.swift */,
-				093E004A200E926700B316D8 /* Model */,
+				093E004A200E926700B316D8 /* Objects */,
 				093E004B200E928600B316D8 /* Controller */,
 				093E004C200E929200B316D8 /* Views */,
 				093E0020200E921D00B316D8 /* Main.storyboard */,
@@ -289,10 +289,10 @@
 				093E002F200E921D00B316D8 /* Post.swift in Sources */,
 				096AFA0F20110C57000ECA97 /* UserTableViewCell.swift in Sources */,
 				096AFA1320110E4D000ECA97 /* UsersTableViewController.swift in Sources */,
+				097EC8362017ABA900324296 /* PhotoPostViewController.swift in Sources */,
 				097CF330200FD0790046B6D0 /* LoginViewController.swift in Sources */,
-				093E003A200E921D00B316D8 /* NewsfeedTableViewController.swift in Sources */,
-				096AFA1520112C4E000ECA97 /* FollowButton.swift in Sources */,
-				093E0045200E921D00B316D8 /* PostHeaderCell.swift in Sources */,
+				093E003A200E921D00B316D8 /* NewsfeedViewController.swift in Sources */,
+				091C111220178B8E00BB7967 /* TakePhotoViewController.swift in Sources */,
 				093E0046200E921D00B316D8 /* PostCell.swift in Sources */,
 				097CF332200FF5A00046B6D0 /* LoginTextfields.swift in Sources */,
 			);

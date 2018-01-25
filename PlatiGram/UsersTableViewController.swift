@@ -10,9 +10,8 @@ import UIKit
 import Firebase
 
 class UsersTableViewController: UITableViewController{
-       
-    var user = [User]()
     
+    var user = [User]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,15 +63,7 @@ class UsersTableViewController: UITableViewController{
         cell.userID = self.user[indexPath.row].userID
         cell.profileImageView.downloadImage(from: user[indexPath.row].imagePath!)
         
-        
-        if isfollowed == true { cell.followButton.backgroundColor = .blue
-            cell.followButton.setTitleColor(.white, for: .selected)
-        }
-        
-        if isfollowed == false {
-            cell.followButton.backgroundColor = .white
-            cell.followButton.setTitleColor(.blue, for: .normal)
-        }
+        checkFollowing(indexPath: indexPath)
 
         return cell
     }
@@ -83,6 +74,7 @@ class UsersTableViewController: UITableViewController{
         let dbRef = Database.database().reference()
         let key = dbRef.child("users").childByAutoId().key
         
+        
         var isfollower = false
         
         dbRef.child("users").child(uid!).child("following").queryOrderedByKey().observeSingleEvent(of: .value, with: {snapshot in
@@ -91,12 +83,16 @@ class UsersTableViewController: UITableViewController{
                     if value as? String == self.user[indexPath.row].userID {
                         isfollower = true
                         
-                        dbRef.child("users").child(uid!).child("following?/\(key)").removeValue()
+                        dbRef.child("users").child(uid!).child("following/\(key)").removeValue()
                         dbRef.child("users").child(self.user[indexPath.row].userID!).child("followers/\(key)").removeValue()
-                                                                    
+                        
+                        self.tableView.cellForRow(at: indexPath)?.accessoryType = .none
+                        
+                        
                     }
                 }
             }
+            
             //Follow as user has no followers
             if !isfollower {
                 let following = ["following/\(key)" : self.user[indexPath.row].userID]
@@ -104,10 +100,30 @@ class UsersTableViewController: UITableViewController{
                 
                 dbRef.child("users").child(uid!).updateChildValues(following)
                 dbRef.child("users").child(self.user[indexPath.row].userID!).updateChildValues(followers)
+                self.tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
             }
         })
         
         dbRef.removeAllObservers()
+    }
+    
+    func checkFollowing(indexPath:IndexPath) {
+        let uid = Auth.auth().currentUser?.uid
+        let dbRef = Database.database().reference()
+        
+        dbRef.child("users").child(uid!).child("following").queryOrderedByKey().observeSingleEvent(of: .value, with: {snapshot in
+            if let following = snapshot.value as? [String:AnyObject]{
+                for (_, value) in following {
+                    if value as? String == self.user[indexPath.row].userID {
+                        
+                        self.tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+                    }
+                }
+            }
+        })
+        
+        dbRef.removeAllObservers()
+    
     }
 
     /*
@@ -178,9 +194,6 @@ extension UIImageView{
     }
     
 }
-
-
-
 
 
 

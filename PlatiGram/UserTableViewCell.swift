@@ -16,14 +16,22 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var followButton: UIButton!
     
+    @IBAction func followButtonPressed(_ sender: Any) {
+        
+    }
     
     var userID: String!
-
     
-    
-    @IBAction func followBtnPressed(_ sender: Any) {
+    func following(status: Bool) {
         
-        
-        
+        if status == true {
+            followButton.backgroundColor = self.tintColor
+            followButton.setTitleColor(.white, for: .normal)
+            
+        }
+        else {
+            followButton.backgroundColor = .white
+            followButton.setTitleColor(self.tintColor, for: .normal)
+        }
     }
 }

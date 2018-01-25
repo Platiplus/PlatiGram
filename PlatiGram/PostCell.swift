@@ -8,26 +8,19 @@
 
 import UIKit
 
-class PostCell: UITableViewCell {
+class PostCell: UICollectionViewCell {
 
+    @IBOutlet weak var authorNameLabel: UILabel!
+    @IBOutlet weak var authorPhoto: UIImageView!
+    @IBOutlet weak var followButton: UIButton!
+    
     @IBOutlet weak var postImageView: UIImageView!
-    @IBOutlet weak var numberOfLikesButton: UIButton!
+    @IBOutlet weak var numberOfLikesLabel: UILabel!
     @IBOutlet weak var postCaptionLabel: UILabel!
     @IBOutlet weak var timeAgoLabel: UILabel!
 
-    
-    var post: Post!{
-        didSet{
-            self.updateUI()
-        }
-    }
-    
-    //Função abaixo define o conteúdo da célula do post
-    func updateUI(){
-        postImageView.image = post.image
-        postCaptionLabel.text = post.caption
-        numberOfLikesButton.setTitle("Be the first to comment!", for: [])
-        timeAgoLabel.text = post.timeAgo
-    }
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
     
 }
